@@ -30,12 +30,37 @@ header h1 {
     font-weight: 700;
 }
 
+/* Botón de menú desplegable */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Estilos del menú */
+header nav {
+    display: flex;
+    align-items: center;
+}
+
 header nav ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
     gap: 20px;
+}
+
+header nav ul.hidden {
+    display: none;
 }
 
 header nav a {
@@ -317,13 +342,50 @@ footer {
 
 /* Dispositivos móviles en modo retrato (menor a 768px) */
 @media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     header h1 {
         font-size: 1.8rem;
+    }
+
+    header nav {
+        width: 100%;
     }
 
     header nav ul {
         flex-direction: column;
         gap: 10px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #1b5e20; /* Dark Green */
+        position: absolute;
+        top: 80px; /* Adjust based on header height */
+        left: 0;
+        display: none;
+    }
+
+    header nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle.active div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
 
     .hero h2 {
@@ -371,4 +433,6 @@ footer {
     }
 
     .hero p {
-        font-size: 1.
+        font-size: 1.125rem;
+    }
+}
