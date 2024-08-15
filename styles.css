@@ -22,11 +22,12 @@ header {
     align-items: center;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: padding 0.3s ease;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .menu-toggle {
@@ -338,6 +339,12 @@ footer {
 
 /* Menú para dispositivos móviles */
 @media (max-width: 767px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     header h1 {
         font-size: 1.5rem;
     }
@@ -347,22 +354,25 @@ footer {
     }
 
     .menu-icon {
-        background-color: #fff;
         display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px auto;
     }
 
     header nav {
         display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
         width: 100%;
-        background-color: #1b5e20; /* Dark Green */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         flex-direction: column;
         align-items: center;
+        background-color: #1b5e20; /* Dark Green */
         padding: 20px;
+        position: absolute;
+        top: 60px;
+        left: 0;
         z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     header nav.active {
@@ -372,39 +382,12 @@ footer {
     header nav ul {
         flex-direction: column;
         gap: 10px;
+        width: 100%;
+        text-align: center;
     }
 
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .cta-button {
-        padding: 8px 16px;
-    }
-
-    .about-content,
-    .services-content,
-    .projects-content,
-    .blog-posts,
-    .testimonials-content,
-    .gallery {
-        flex-direction: column;
-    }
-
-    .about-item,
-    .service-item,
-    .project-item,
-    .blog-post,
-    .testimonial-item {
-        margin: 10px 0;
-    }
-
-    .gallery img {
-        max-width: 100%;
+    header nav a {
+        font-size: 1.2rem;
     }
 }
 
