@@ -16,7 +16,7 @@ header {
     width: 100%;
     background-color: #1b5e20; /* Dark Green */
     color: #fff;
-    padding: 10px 20px; /* Ajustado para móviles */
+    padding: 10px 20px; /* Reducido para móviles */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +48,7 @@ header h1 {
     transition: all 0.3s ease;
 }
 
+/* Menú de navegación */
 header nav {
     display: flex;
     align-items: center;
@@ -79,7 +80,6 @@ header nav a:hover {
     header {
         flex-direction: column;
         padding: 10px 15px; /* Reducido para móviles */
-        align-items: flex-start;
     }
 
     header h1 {
@@ -169,7 +169,7 @@ header nav a:hover {
     }
 }
 
-/* Hero Section */
+/* Resto del CSS (sección hero, about, services, etc.) */
 .hero {
     display: flex;
     flex-direction: column;
@@ -211,7 +211,6 @@ header nav a:hover {
     background-color: #81c784; /* Darker Green */
 }
 
-/* Sección About */
 .section {
     padding: 60px 20px;
 }
@@ -239,7 +238,6 @@ header nav a:hover {
     margin-top: 0;
 }
 
-/* Sección Services */
 .services-section {
     background-color: #e0f2f1; /* Light Teal */
 }
@@ -263,7 +261,6 @@ header nav a:hover {
     margin-bottom: 20px;
 }
 
-/* Sección Projects */
 .projects-section {
     background-color: #fff;
 }
@@ -290,7 +287,6 @@ header nav a:hover {
     border-radius: 8px;
 }
 
-/* Sección Blog */
 .blog-section {
     background-color: #f1f8e9;
 }
@@ -314,7 +310,6 @@ header nav a:hover {
     margin-top: 0;
 }
 
-/* Sección Testimonials */
 .testimonials-section {
     background-color: #e0f2f1;
 }
@@ -338,7 +333,6 @@ header nav a:hover {
     margin-top: 0;
 }
 
-/* Sección Gallery */
 .gallery-section {
     background-color: #fff;
 }
@@ -356,7 +350,6 @@ header nav a:hover {
     border-radius: 8px;
 }
 
-/* Sección App Download */
 .app-download {
     background-color: #a5d6a7; /* Light Green */
     color: #000000;
@@ -385,7 +378,6 @@ header nav a:hover {
     color: #fff;
 }
 
-/* Sección Contact */
 .contact {
     background-color: #e0f2f1; /* Light Teal */
     text-align: center;
