@@ -16,13 +16,12 @@ header {
     width: 100%;
     background-color: #1b5e20; /* Dark Green */
     color: #fff;
-    padding: 10px 20px; /* Reducido para móviles */
+    padding: 10px 15px; /* Reducido para móviles */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: padding 0.3s ease;
 }
 
 header h1 {
@@ -51,15 +50,20 @@ header h1 {
 /* Menú de navegación */
 header nav {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 header nav ul {
     display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 20px;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 header nav a {
@@ -67,6 +71,8 @@ header nav a {
     text-decoration: none;
     font-weight: 500;
     position: relative;
+    padding: 10px 0;
+    display: block;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -77,29 +83,12 @@ header nav a:hover {
 
 /* Menú para dispositivos móviles */
 @media (max-width: 767px) {
-    header {
-        flex-direction: column;
-        padding: 10px 15px; /* Reducido para móviles */
-    }
-
-    header h1 {
-        font-size: 1.2rem; /* Ajustado para móviles */
-    }
-
     .menu-toggle {
         display: block;
     }
 
-    .menu-icon {
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
-        margin: 6px auto;
-    }
-
     header nav {
         display: none;
-        width: 100%;
         flex-direction: column;
         align-items: center;
         background-color: #1b5e20; /* Dark Green */
@@ -108,7 +97,7 @@ header nav a:hover {
         left: 0;
         z-index: 1000;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        padding: 20px 0;
+        padding: 10px 0;
         max-height: 0; /* Ocultar el menú */
         overflow: hidden; /* Ocultar el contenido excedente */
         transition: max-height 0.3s ease; /* Transición suave */
@@ -120,7 +109,6 @@ header nav a:hover {
     }
 
     header nav ul {
-        flex-direction: column;
         gap: 10px;
         width: 100%;
         text-align: center;
@@ -153,7 +141,6 @@ header nav a:hover {
     }
 
     header nav {
-        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         position: static;
@@ -166,10 +153,11 @@ header nav a:hover {
 
     header nav a {
         font-size: 1rem;
+        padding: 10px 15px;
     }
 }
 
-/* Resto del CSS (sección hero, about, services, etc.) */
+/* Estilos del contenido */
 .hero {
     display: flex;
     flex-direction: column;
@@ -187,12 +175,12 @@ header nav a:hover {
 }
 
 .hero h2 {
-    font-size: 3rem;
+    font-size: 2rem; /* Ajustado para móviles */
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1rem; /* Ajustado para móviles */
     margin-bottom: 30px;
 }
 
@@ -231,7 +219,7 @@ header nav a:hover {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .about-item h3 {
@@ -254,7 +242,7 @@ header nav a:hover {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .services-section h2 {
@@ -278,7 +266,7 @@ header nav a:hover {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .project-item img {
@@ -303,7 +291,7 @@ header nav a:hover {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .blog-post h3 {
@@ -326,7 +314,7 @@ header nav a:hover {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .testimonial-item h3 {
@@ -438,12 +426,11 @@ footer {
 /* Dispositivos móviles en modo retrato (menor a 768px) */
 @media (max-width: 767px) {
     header {
-        flex-direction: column;
-        padding: 10px 15px; /* Reducido para móviles */
+        padding: 10px; /* Reducido para móviles */
     }
 
     header h1 {
-        font-size: 1.2rem; /* Ajustado para móviles */
+        font-size: 1.5rem; /* Ajustado para móviles */
     }
 
     .menu-toggle {
@@ -459,16 +446,16 @@ footer {
 
     header nav {
         display: none;
-        width: 100%;
         flex-direction: column;
         align-items: center;
         background-color: #1b5e20; /* Dark Green */
         position: absolute;
-        top: 60px;
+        top: 50px; /* Ajuste para el botón de menú */
         left: 0;
+        width: 100%;
         z-index: 1000;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        padding: 20px 0;
+        padding: 10px 0;
         max-height: 0; /* Ocultar el menú */
         overflow: hidden; /* Ocultar el contenido excedente */
         transition: max-height 0.3s ease; /* Transición suave */
@@ -480,10 +467,8 @@ footer {
     }
 
     header nav ul {
-        flex-direction: column;
         gap: 10px;
         width: 100%;
-        text-align: center;
         padding: 0;
         margin: 0;
     }
@@ -500,12 +485,24 @@ footer {
     header nav a:last-child {
         border-bottom: none;
     }
+
+    .hero h2 {
+        font-size: 1.5rem; /* Ajustado para móviles */
+    }
+
+    .hero p {
+        font-size: 0.875rem; /* Ajustado para móviles */
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
 }
 
 /* Tablets en modo paisaje y móviles grandes (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
-        padding: 15px 20px; /* Ajustado para tablets y móviles grandes */
+        padding: 15px; /* Ajustado para tablets y móviles grandes */
     }
 
     header h1 {
@@ -526,5 +523,18 @@ footer {
 
     header nav a {
         font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .hero h2 {
+        font-size: 2rem; /* Ajustado para tablets */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Ajustado para tablets */
+    }
+
+    .cta-button {
+        padding: 10px 20px;
     }
 }
