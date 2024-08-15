@@ -79,7 +79,7 @@ header nav a:hover {
 }
 
 .hero-content {
-    max-width: 90%;
+    max-width: 1200px;
 }
 
 .hero h2 {
@@ -216,11 +216,11 @@ footer {
     background-color: #1b5e20; /* Dark Green */
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 20px 5%;
 }
 
 .footer-container {
-    max-width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -248,59 +248,6 @@ footer {
 
 /* Dispositivos móviles y tablets (menor a 1024px) */
 @media (max-width: 1024px) {
-    header {
-        padding: 20px 5%;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    header nav ul {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    header nav li {
-        margin: 0 10px;
-    }
-
-    header nav a {
-        font-size: 1rem;
-        padding: 10px 15px;
-    }
-
-    .hero {
-        padding: 0 5%;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-    }
-
-    .section {
-        padding: 60px 5%;
-    }
-
-    .about-item,
-    .service-item,
-    .project-item,
-    .blog-post,
-    .testimonial-item {
-        margin: 10px;
-        max-width: 300px;
-    }
-
-    .gallery img {
-        max-width: 300px;
-    }
+    /* El header ya está configurado para tener padding y tamaño consistente */
+    /* Los elementos del contenido ya están configurados para tener un tamaño consistente */
 }
