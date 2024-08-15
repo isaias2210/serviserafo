@@ -109,10 +109,14 @@ header nav a:hover {
         z-index: 1000;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         padding: 20px 0;
+        max-height: 0; /* Ocultar el menú */
+        overflow: hidden; /* Ocultar el contenido excedente */
+        transition: max-height 0.3s ease; /* Transición suave */
     }
 
     header nav.active {
         display: flex;
+        max-height: 300px; /* Altura máxima para mostrar el menú */
     }
 
     header nav ul {
@@ -443,7 +447,11 @@ footer {
 @media (max-width: 767px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        padding: 10px 15px; /* Reducido para móviles */
+    }
+
+    header h1 {
+        font-size: 1.2rem; /* Ajustado para móviles */
     }
 
     .menu-toggle {
@@ -469,10 +477,14 @@ footer {
         z-index: 1000;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         padding: 20px 0;
+        max-height: 0; /* Ocultar el menú */
+        overflow: hidden; /* Ocultar el contenido excedente */
+        transition: max-height 0.3s ease; /* Transición suave */
     }
 
     header nav.active {
         display: flex;
+        max-height: 300px; /* Altura máxima para mostrar el menú */
     }
 
     header nav ul {
