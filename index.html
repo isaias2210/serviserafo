@@ -3,258 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios y Mantenimiento Serafo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        header img {
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 0.5;
-            object-fit: cover;
-        }
-        .header-content {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        .header-title {
-            margin: 0;
-            font-size: 2.5rem;
-            z-index: 1;
-        }
-        .header-btn {
-            position: absolute;
-            right: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 1;
-        }
-        .header-btn a {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            font-size: 1.25rem;
-            color: #fff;
-            background-color: #FF5722; /* Color naranja brillante */
-            border: none;
-            border-radius: 8px;
-            text-decoration: none;
-            text-align: center;
-            transition: background-color 0.3s, transform 0.3s;
-            cursor: pointer;
-        }
-        .header-btn a:hover {
-            background-color: #e64a19; /* Color naranja más oscuro */
-            transform: scale(1.05);
-        }
-        .header-btn a:active {
-            transform: scale(0.98);
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-        nav a {
-            color: white;
-            padding: 1rem;
-            text-decoration: none;
-            display: block;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        .container {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section {
-            margin-bottom: 2rem;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        .section img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .section h2 {
-            color: #4CAF50;
-        }
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .contact-info p {
-            margin: 0.5rem 0;
-        }
-        .contact-info img {
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
-            margin-right: 0.5rem;
-        }
-        .footer-logo {
-            max-width: 150px;
-            margin: 1rem auto;
-        }
-        .video-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-        }
-        .video-container {
-            flex: 1 1 45%;
-            max-width: 560px;
-            margin-bottom: 1rem;
-        }
-        .video-container video {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: relative;
-        }
-        /* Highlighted link */
-        .highlight-link {
-            color: #007bff; /* Color azul para resaltar */
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .highlight-link:hover {
-            text-decoration: underline;
-        }
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            .header-title {
-                font-size: 1.8rem;
-            }
-            .header-btn a {
-                padding: 0.5rem 1rem;
-                font-size: 1rem;
-                right: 0.5rem;
-            }
-            .header-content {
-                flex-direction: column;
-                align-items: center;
-            }
-            .header-btn {
-                position: static;
-                margin-top: 1rem;
-            }
-        }
-        @media (max-width: 480px) {
-            .header-title {
-                font-size: 1.5rem;
-            }
-            .header-btn a {
-                padding: 0.5rem 0.75rem;
-                font-size: 0.875rem;
-            }
-        }
-    </style>
+    <title>Servicios y Mantenimiento Serafó</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1 class="header-title">Servicios y Mantenimiento Serafo</h1>
-            <div class="header-btn">
-                <a href="serviSerafo (1).apk" download>DESCARGAR APP</a>
+        <div class="container">
+            <h1>Servicios y Mantenimiento Serafó</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Acerca de Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#app">Descargar App</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Transforma tu jardín con excelencia</h2>
+            <p>Servicios profesionales de jardinería para un espacio verde saludable y estéticamente agradable.</p>
+            <a href="#contact" class="cta-button">Contáctanos</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>Acerca de Nosotros</h2>
+            <div class="about-content">
+                <div class="about-item">
+                    <h3>Nuestra Misión</h3>
+                    <p>En Servicios y Mantenimiento Serafó, nuestra misión es proporcionar soluciones de jardinería de alta calidad que transformen y embellezcan espacios verdes en Panamá. Nos comprometemos a ofrecer un servicio personalizado y profesional, adaptado a las necesidades únicas de cada cliente. A través de nuestro conocimiento especializado y atención al detalle, buscamos promover la salud, la sostenibilidad y el disfrute del entorno natural para todos nuestros clientes.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Nuestra Visión</h3>
+                    <p>Nuestra visión es convertirnos en el líder en servicios de jardinería y mantenimiento en Panamá, reconocido por nuestra excelencia, innovación y compromiso con la satisfacción del cliente. Aspiramos a crear jardines y espacios verdes que no solo sean visualmente impresionantes, sino que también contribuyan al bienestar y la calidad de vida de nuestras comunidades. Nos esforzamos por ser el socio confiable y preferido en la creación de entornos naturales sostenibles y vibrantes, impactando positivamente en cada proyecto que emprendemos.</p>
+                </div>
             </div>
         </div>
-        <img src="https://via.placeholder.com/1920x400?text=Banner+de+Servicios+y+Mantenimiento+Seraf" alt="Banner de Servicios y Mantenimiento Seraf">
-        <p>Especialistas en jardinería y áreas verdes</p>
-    </header>
-    <nav>
-        <a href="#about">Sobre Nosotros</a>
-        <a href="#services">Servicios</a>
-        <a href="#gallery">Galería</a>
-        <a href="#contact">Contacto</a>
-    </nav>
-    <div class="container">
-        <section id="about" class="section">
-            <h2>Sobre Nosotros</h2>
-            <p>En Servicios y Mantenimiento Serafo nos dedicamos a ofrecer soluciones integrales en jardinería y mantenimiento de áreas verdes. Contamos con un equipo de profesionales altamente capacitados para atender todas tus necesidades en el cuidado de tu jardín y espacios verdes.</p>
-            <img src="Captura de pantalla 2024-08-11 171908.png" alt="Nuestro Equipo">
-        </section>
-        <section id="services" class="section">
+    </section>
+
+    <section id="services" class="section services-section">
+        <div class="container">
             <h2>Servicios</h2>
-            <ul>
-                <li>Mantenimiento de jardines</li>
-                <li>Diseño y planificación de áreas verdes</li>
-                <li>Instalación de gramas</li>
-                <li>Podas y cortes de césped</li>
-                <li>Limpieza con hidrolavadora</li>
-                <li>Ventas de plantas <a href="https://www.instagram.com/vivero_maxito/?utm_source=ig_web_button_share_sheet" class="highlight-link" target="_blank">@vivero Maxito</a></li>
-            </ul>
-        </section>
-        <section id="gallery" class="section">
+            <p>Ofrecemos una gama completa de servicios de jardinería para todas tus necesidades.</p>
+            <div class="services-content">
+                <div class="service-item">
+                    <h3>Diseño de Jardines</h3>
+                    <p>Creación de jardines personalizados para tus gustos y necesidades.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Mantenimiento</h3>
+                    <p>Servicios de mantenimiento regular para mantener tu jardín en óptimas condiciones.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Instalación de Gramas</h3>
+                    <p>Instalación y mantenimiento de gramas de todo tipo, ofreciendo un trabajo eficiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2>Nuestros Proyectos</h2>
+            <p>Explora algunos de nuestros proyectos más destacados.</p>
+            <div class="projects-content">
+                <div class="project-item">
+                    <img src="Imagen de WhatsApp 2024-08-15 a las 13.54.07_1b41e208.jpg" alt="Proyecto 1">
+                    <h3>Proyecto en La escuela Santa Rita </h3>
+                    <p>En colaboración con Procter & Gamble, Servicios y Mantenimiento Serafó se enorgullece en presentar el exitoso proyecto de embellecimiento y mejora ambiental de la Escuela Santa Rita. A través de la implementación de diversas especies de plantas y soluciones paisajísticas innovadoras, hemos transformado el entorno educativo en un espacio más verde, saludable y estimulante para los estudiantes.</p>
+                </div>
+                <div class="project-item">
+                    <img src="Imagen de WhatsApp 2024-08-15 a las 13.56.58_a8b18ac3.jpg" alt="Proyecto 2">
+                    <h3>Renovacion de escuela en Chepo</h3>
+                    <p>En colaboración con Procter & Gamble, hemos llevado a cabo un emocionante proyecto de mejora en la escuela de Las Garzas, transformando su entorno con la incorporación de plantas. Este esfuerzo no solo embelleció el espacio, sino que también proporcionó un entorno de aprendizaje más saludable y estimulante para los estudiantes. Nuestro compromiso con el medio ambiente y la educación se refleja en cada rincón del campus, creando un ambiente que fomenta la creatividad y el bienestar. Agradecemos a Procter & Gamble por su apoyo y a la comunidad local por su entusiasmo y participación en esta iniciativa verde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <h2>Blog</h2>
+            <p>Lee nuestros artículos recientes sobre jardinería y consejos útiles.</p>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <h3>Cuidado del Jardín en el Clima Tropical</h3>
+                    <p>En Panamá, el clima tropical y húmedo presenta desafíos y oportunidades únicas para los jardineros. Aquí te ofrecemos consejos para mantener tu jardín saludable y vibrante durante todo el año en este entorno cálido y lluvioso.</p>
+                    <ul>
+                        <li><strong>Todo el Año: Adaptaciones para el Clima Tropical</strong></li>
+                        <li><strong>Riego Efectivo:</strong> Aunque las lluvias son frecuentes, asegúrate de que el suelo drene bien para evitar el encharcamiento. Ajusta el riego según las necesidades de cada planta.</li>
+                        <li><strong>Control de Plagas:</strong> Las condiciones cálidas y húmedas pueden aumentar el riesgo de plagas. Inspecciona tus plantas regularmente y utiliza métodos de control orgánicos.</li>
+                        <li><strong>Elección de Plantas:</strong> Opta por plantas resistentes a la humedad y al calor, como hibiscos y bugambilias.</li>
+                        <li><strong>Temporada de Lluvias (Mayo a Noviembre):</strong> Durante la temporada de lluvias, es crucial mantener un buen sistema de drenaje y prevenir enfermedades.</li>
+                        <li><strong>Temporada Secas (Diciembre a Abril):</strong> Cuando las lluvias disminuyen, aumenta la frecuencia de riego y proporciona sombra adicional a las plantas sensibles al calor.</li>
+                        <li><strong>Consejos Adicionales:</strong> Usa mulch para conservar la humedad y realiza una fertilización regular.</li>
+                    </ul>
+                    <p>¡Confía en Servicios y Mantenimiento Serafó para tu Jardín! Si necesitas asistencia profesional, contáctanos al 6296-8776, por WhatsApp o síguenos en Instagram: @serviciosymanteserafo. ¡Estamos aquí para ayudarte a mantener tu jardín en su mejor forma!</p>
+                </div>
+                <div class="blog-post">
+                    <h3>Beneficios de la Jardinería para la Salud Mental</h3>
+                    <p>La jardinería no solo embellece tu hogar, sino que también ofrece numerosos beneficios para la salud mental. En el ritmo agitado de la vida moderna, trabajar en el jardín puede ser una forma efectiva de reducir el estrés y mejorar tu bienestar general.</p>
+                    <ul>
+                        <li><strong>Reducción del Estrés:</strong> Conexión con la naturaleza y actividades relajantes en el jardín pueden ayudar a calmar la mente y reducir el estrés.</li>
+                        <li><strong>Mejora del Estado de Ánimo:</strong> La jardinería proporciona una sensación de logro y estimulación sensorial, elevando el ánimo.</li>
+                        <li><strong>Fomento de la Tranquilidad Mental:</strong> La jardinería ofrece una rutina estructurada y ejercicio físico que mejora la estabilidad emocional.</li>
+                        <li><strong>Consejos para Incorporar la Jardinería en tu Vida:</strong> Empieza con proyectos pequeños y hazlo un hábito para maximizar los beneficios para tu salud mental.</li>
+                    </ul>
+                    <p>¿Te gustaría empezar a disfrutar de los beneficios de la jardinería? Servicios y Mantenimiento Serafó está aquí para ayudarte a crear y mantener un espacio verde que no solo embellezca tu hogar, sino que también promueva tu bienestar. Contáctanos al 6296-8776, por WhatsApp o síguenos en Instagram: @serviciosymanteserafo para obtener más información y comenzar tu viaje hacia un jardín saludable y revitalizante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <p>Lo que dicen nuestros clientes sobre nuestros servicios.</p>
+            <div class="testimonials-content">
+                <div class="testimonial-item">
+                    <h3>María González</h3>
+                    <p>Contratar a Servicios y Mantenimiento Serafó ha sido una de las mejores decisiones que hemos tomado para nuestro jardín. Desde el primer día, su equipo ha demostrado un profundo conocimiento del cuidado de plantas en nuestro clima tropical. Nos ayudaron a transformar nuestro jardín en un oasis verde y vibrante. Además, su atención al detalle y su profesionalismo han sido excepcionales. Siempre están disponibles para responder nuestras preguntas y ofrecen soluciones efectivas para cualquier problema que surja. ¡Recomiendo encarecidamente a Serafó para cualquier necesidad de jardinería!</p>
+                </div>
+                <div class="testimonial-item">
+                    <h3>Juan Pérez</h3>
+                    <p>Los servicios de Servicios y Mantenimiento Serafó superaron nuestras expectativas. Desde el diseño hasta el mantenimiento continuo, han demostrado un gran compromiso con la calidad y la satisfacción del cliente. Nos ayudaron a manejar los desafíos del clima húmedo y a mantener nuestras plantas saludables y exuberantes durante todo el año. Su equipo es altamente profesional y siempre está dispuesto a ir más allá para asegurar que nuestro jardín luzca perfecto. Sin duda, han sido una inversión valiosa para nuestra finca. ¡Gracias por todo el excelente trabajo!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
             <h2>Galería</h2>
-            <div class="video-gallery">
-                <div class="video-container">
-                    <video controls>
-                        <source src="Contactanos... ESTAMOS LISTOS para llenar tus Espacios de Naturaleza. Al máximo.mp4" type="video/mp4">
-                        Tu navegador no soporta la etiqueta de video.
-                    </video>
-                </div>
-                <div class="video-container">
-                    <video controls>
-                        <source src="S. M, SERAFO. ESTAMOS PARA SERVIRLESCONTACTANOS. MIRA EL PERFIL.mp4" type="video/mp4">
-                        Tu navegador no soporta la etiqueta de video.
-                    </video>
-                </div>
+            <p>Descubre nuestros proyectos recientes.</p>
+            <div class="gallery">
+                <img src="Imagen de WhatsApp 2024-08-15 a las 14.21.01_02326984.jpg" alt="Galería 1">
+                <img src="Imagen de WhatsApp 2024-08-15 a las 14.17.52_6b89219a.jpg" alt="Galería 2">
+                <img src="Imagen de WhatsApp 2024-08-15 a las 14.17.30_122de4bb.jpg" alt="Galería 3">
             </div>
-            <p>Descubre algunos de nuestros trabajos más recientes en la galería de imágenes.</p>
-        </section>
-        <section id="contact" class="section">
+        </div>
+    </section>
+
+    <section id="app" class="section app-download">
+        <div class="container">
+            <h2>Descarga nuestra App</h2>
+            <p>Gestiona tus servicios de jardinería de manera fácil y rápida con nuestra aplicación móvil. Descárgala hoy mismo para programar mantenimientos y solicitar servicios.</p>
+            <div class="app-buttons">
+                <a href="serviSerafo (1).apk" class="app-button" target="_blank">Descargar App</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
             <h2>Contacto</h2>
-            <div class="contact-info">
-                <p><img src="Google-Phone-App-Icon.webp" alt="Teléfono"> Teléfono: 6100-5958 / 6296-8776</p>
-                <p><img src="R (1).png" alt="WhatsApp"> WhatsApp: 6100-5958 / 6296-8776</p>
-                <p><img src="Gmail-Logo.png" alt="Correo Electrónico"> Correo Electrónico: serviciosymantenimientoserafo@gmail.com</p>
-            </div>
-        </section>
-    </div>
+            <p>¿Tienes alguna pregunta o necesitas más información sobre nuestros servicios? ¡No dudes en contactarnos!</p>
+            <a href="https://wa.me/62968776" class="contact-button" target="_blank">Envíanos un mensaje por WhatsApp</a>
+        </div>
+    </section>
+
     <footer>
-        <img class="footer-logo" src="logo.jpg" alt="Logo de Servicios y Mantenimiento Seraf">
-        <p>&copy; 2024 Servicios y Mantenimiento Serafo. Todos los derechos reservados.</p>
+        <div class="footer-container">
+            <p>Teléfono: +507 6296-8776</p>
+            <p>Email: serviciosymantenimientoserafo@gmail.com</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/serviciosymanteserafo/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/people/Servicios-y-mantenimiento-serafo/100081848655048/" target="_blank">Facebook</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
