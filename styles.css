@@ -16,7 +16,7 @@ header {
     width: 100%;
     background-color: #1b5e20; /* Dark Green */
     color: #fff;
-    padding: 10px 5%;
+    padding: 20px 5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -246,44 +246,49 @@ footer {
 
 /* Media Queries */
 
-/* Dispositivos móviles (menor a 768px) */
-@media (max-width: 767px) {
+/* Dispositivos móviles y tablets (menor a 1024px) */
+@media (max-width: 1024px) {
     header {
-        padding: 10px 2%;
+        padding: 20px 5%;
     }
 
     header h1 {
-        font-size: 1.25rem;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav li {
-        margin: 5px 0;
-    }
-
-    header nav a {
-        font-size: 0.875rem;
-        padding: 10px 5px;
-    }
-
-    .hero h2 {
         font-size: 1.5rem;
     }
 
+    header nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav li {
+        margin: 0 10px;
+    }
+
+    header nav a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .hero {
+        padding: 0 5%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
     .hero p {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     .cta-button {
-        padding: 8px 16px;
+        padding: 10px 20px;
     }
 
     .section {
-        padding: 30px 2%;
+        padding: 60px 5%;
     }
 
     .about-item,
@@ -291,11 +296,11 @@ footer {
     .project-item,
     .blog-post,
     .testimonial-item {
-        margin: 10px 0;
-        max-width: 100%;
+        margin: 10px;
+        max-width: 300px;
     }
 
     .gallery img {
-        max-width: 100%;
+        max-width: 300px;
     }
 }
