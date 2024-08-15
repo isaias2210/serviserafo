@@ -16,12 +16,12 @@ header {
     width: 100%;
     background-color: #1b5e20; /* Dark Green */
     color: #fff;
-    padding: 10px;
+    padding: 10px 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -30,37 +30,32 @@ header h1 {
     text-align: center;
 }
 
-.menu-toggle {
-    display: none;
-}
-
-.menu-icon {
-    display: none;
-}
-
-/* Menú de navegación */
 header nav {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 header nav ul {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
     width: 100%;
-    justify-content: center;
+}
+
+header nav li {
+    margin: 0 10px;
 }
 
 header nav a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    padding: 10px;
+    padding: 10px 15px;
     display: block;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -254,8 +249,7 @@ footer {
 /* Dispositivos móviles (menor a 768px) */
 @media (max-width: 767px) {
     header {
-        padding: 10px;
-        font-size: 0.875rem;
+        padding: 10px 2%;
     }
 
     header h1 {
@@ -267,9 +261,13 @@ footer {
         align-items: center;
     }
 
+    header nav li {
+        margin: 5px 0;
+    }
+
     header nav a {
         font-size: 0.875rem;
-        padding: 10px;
+        padding: 10px 5px;
     }
 
     .hero h2 {
@@ -285,7 +283,7 @@ footer {
     }
 
     .section {
-        padding: 30px 5%;
+        padding: 30px 2%;
     }
 
     .about-item,
