@@ -16,7 +16,7 @@ header {
     width: 100%;
     background-color: #1b5e20; /* Dark Green */
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Ajustado para móviles */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Ajustado para móviles */
 }
 
 .menu-toggle {
@@ -78,12 +78,12 @@ header nav a:hover {
 @media (max-width: 767px) {
     header {
         flex-direction: column;
-        padding: 10px;
+        padding: 10px; /* Reducido para móviles */
         align-items: flex-start;
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem; /* Ajustado para móviles */
     }
 
     .menu-toggle {
@@ -125,7 +125,7 @@ header nav a:hover {
     }
 
     header nav a {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Ajustado para móviles */
         padding: 10px 20px;
         display: block;
         width: 100%;
@@ -140,6 +140,10 @@ header nav a:hover {
 
 /* Tablets en modo paisaje y móviles grandes (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 15px 20px; /* Ajustado para tablets y móviles grandes */
+    }
+
     header h1 {
         font-size: 1.8rem;
     }
@@ -377,7 +381,7 @@ header nav a:hover {
     color: #fff;
 }
 
-/* Sección Contacto */
+/* Sección Contact */
 .contact {
     background-color: #e0f2f1; /* Light Teal */
     text-align: center;
@@ -438,13 +442,13 @@ footer {
 /* Dispositivos móviles en modo retrato (menor a 768px) */
 @media (max-width: 767px) {
     header {
+        padding: 10px 15px; /* Reducido para móviles */
         flex-direction: column;
-        padding: 10px;
         align-items: flex-start;
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem; /* Ajustado para móviles */
     }
 
     .menu-toggle {
@@ -486,7 +490,7 @@ footer {
     }
 
     header nav a {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Ajustado para móviles */
         padding: 10px 20px;
         display: block;
         width: 100%;
@@ -501,6 +505,10 @@ footer {
 
 /* Tablets en modo paisaje y móviles grandes (768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 15px 20px; /* Ajustado para tablets y móviles grandes */
+    }
+
     header h1 {
         font-size: 1.8rem;
     }
