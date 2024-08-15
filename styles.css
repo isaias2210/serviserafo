@@ -16,46 +16,51 @@ header {
     width: 100%;
     background-color: #1b5e20; /* Dark Green */
     color: #fff;
-    padding: 20px 5%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Menú de navegación */
 header nav {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
     list-style: none;
     padding: 0;
     margin: 0;
     width: 100%;
-}
-
-header nav li {
-    margin: 0 10px;
+    justify-content: center;
 }
 
 header nav a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    padding: 10px 15px;
+    padding: 10px;
     display: block;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -79,7 +84,7 @@ header nav a:hover {
 }
 
 .hero-content {
-    max-width: 1200px;
+    max-width: 90%;
 }
 
 .hero h2 {
@@ -216,11 +221,11 @@ footer {
     background-color: #1b5e20; /* Dark Green */
     color: #fff;
     text-align: center;
-    padding: 20px 5%;
+    padding: 20px;
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -246,8 +251,53 @@ footer {
 
 /* Media Queries */
 
-/* Dispositivos móviles y tablets (menor a 1024px) */
-@media (max-width: 1024px) {
-    /* El header ya está configurado para tener padding y tamaño consistente */
-    /* Los elementos del contenido ya están configurados para tener un tamaño consistente */
+/* Dispositivos móviles (menor a 768px) */
+@media (max-width: 767px) {
+    header {
+        padding: 10px;
+        font-size: 0.875rem;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        font-size: 0.875rem;
+        padding: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.875rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    .section {
+        padding: 30px 5%;
+    }
+
+    .about-item,
+    .service-item,
+    .project-item,
+    .blog-post,
+    .testimonial-item {
+        margin: 10px 0;
+        max-width: 100%;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
 }
