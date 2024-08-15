@@ -30,6 +30,25 @@ header h1 {
     font-weight: 700;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.menu-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+}
+
 header nav ul {
     display: flex;
     list-style: none;
@@ -313,17 +332,37 @@ footer {
     color: #a5d6a7; /* Light Green */
 }
 
-/* Media Queries */
-
-/* Dispositivos móviles en modo retrato (menor a 768px) */
+/* Menú para dispositivos móviles */
 @media (max-width: 767px) {
     header h1 {
         font-size: 1.8rem;
     }
 
+    header nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1b5e20; /* Dark Green */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
     header nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     .hero h2 {
@@ -366,9 +405,21 @@ footer {
         font-size: 2rem;
     }
 
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
     .hero h2 {
         font-size: 2.5rem;
     }
 
     .hero p {
-        font-size: 1.
+        font-size: 1.125rem;
+    }
+
+    .cta-button {
+        padding: 10px 18px;
+    }
+}
