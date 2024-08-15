@@ -78,7 +78,7 @@ header nav a:hover {
 @media (max-width: 767px) {
     header {
         flex-direction: column;
-        padding: 10px; /* Reducido para móviles */
+        padding: 10px 15px; /* Reducido para móviles */
         align-items: flex-start;
     }
 
@@ -442,13 +442,8 @@ footer {
 /* Dispositivos móviles en modo retrato (menor a 768px) */
 @media (max-width: 767px) {
     header {
-        padding: 10px 15px; /* Reducido para móviles */
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    header h1 {
-        font-size: 1.2rem; /* Ajustado para móviles */
     }
 
     .menu-toggle {
