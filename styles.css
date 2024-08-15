@@ -1,0 +1,374 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #e8f5e9; /* Light Green */
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1b5e20; /* Dark Green */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav a:hover {
+    color: #a5d6a7; /* Light Green */
+    transform: scale(1.1);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('OIG3.jpeg') no-repeat center center/cover;
+    color: #000000;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #a5d6a7; /* Light Green */
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #81c784; /* Darker Green */
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.about-section {
+    background-color: #f1f8e9; /* Light Yellow Green */
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.about-item h3 {
+    margin-top: 0;
+}
+
+.services-section {
+    background-color: #e0f2f1; /* Light Teal */
+}
+
+.services-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.services-section h2 {
+    margin-bottom: 20px;
+}
+
+.projects-section {
+    background-color: #fff;
+}
+
+.projects-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.blog-section {
+    background-color: #f1f8e9;
+}
+
+.blog-posts {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.blog-post h3 {
+    margin-top: 0;
+}
+
+.testimonials-section {
+    background-color: #e0f2f1;
+}
+
+.testimonials-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.testimonial-item h3 {
+    margin-top: 0;
+}
+
+.gallery-section {
+    background-color: #fff;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.app-download {
+    background-color: #a5d6a7; /* Light Green */
+    color: #000000;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app-button {
+    background-color: #fff;
+    color: #1b5e20; /* Dark Green */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-button:hover {
+    background-color: #c8e6c9; /* Light Green */
+    color: #fff;
+}
+
+.contact {
+    background-color: #e0f2f1; /* Light Teal */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #1b5e20; /* Dark Green */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #004d40; /* Darker Teal */
+}
+
+footer {
+    background-color: #1b5e20; /* Dark Green */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #a5d6a7; /* Light Green */
+}
+
+/* Media Queries */
+
+/* Dispositivos móviles en modo retrato (menor a 768px) */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    .about-content,
+    .services-content,
+    .projects-content,
+    .blog-posts,
+    .testimonials-content,
+    .gallery {
+        flex-direction: column;
+    }
+
+    .about-item,
+    .service-item,
+    .project-item,
+    .blog-post,
+    .testimonial-item {
+        margin: 10px 0;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+}
+
+/* Tablets en modo paisaje y móviles grandes (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.
