@@ -32,11 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const statNumbers = document.querySelectorAll('.stat-number');
     let hasAnimated = false;
 
+    // Constantes para la animación
+    const ANIMATION_DURATION_MS = 2000;
+    const FRAME_INTERVAL_MS = 16; // ~60fps
+
     function animateCounters() {
         statNumbers.forEach(stat => {
             const target = parseInt(stat.getAttribute('data-target'));
-            const duration = 2000; // 2 segundos
-            const step = target / (duration / 16); // 60fps
+            const step = target / (ANIMATION_DURATION_MS / FRAME_INTERVAL_MS);
             let current = 0;
 
             const updateCounter = () => {
