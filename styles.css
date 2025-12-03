@@ -133,3 +133,9 @@ body{
 /* Helpers */
 .text-muted{color:var(--muted)}
 .center{text-align:center}
+
+/* Accessibility: reduced motion */
+@media(prefers-reduced-motion:reduce){
+  .site-header{backdrop-filter:none}
+  html{scroll-behavior:auto}
+}
